@@ -9,9 +9,46 @@ body {
   align-self: center;
   justify-self: center;
   .header {
-    h1#title {
-      text-align: center;
-      font-weight: 800;
+    display: grid;
+    grid-template-columns: [logo] 1fr [navbar] 1fr;
+    grid-auto-flow: row;
+    justify-content: space-between;
+    background-color: #fff;
+    .logo {
+      grid-column: logo;
+      grid-row: auto;
+      align-self: center;
+      justify-self: center;
+      img {
+        align-self: center;
+        justify-self: center;
+        width: 70%;
+        height: auto;
+      }
+      @media screen {
+      //  todo make the bar responsive
+      }
+    }
+    nav.navbar {
+      grid-column: navbar;
+      align-self: center;
+      background-color: #98f5ff;
+      ul {
+        display: grid;
+        list-style-type: none;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding: 0 1em;
+        background-color: #ff1629;
+        align-content: center;
+        text-align: center;
+        li {
+          background-color: #ffeec9;
+          a {
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
   .main {

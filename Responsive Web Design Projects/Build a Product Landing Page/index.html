@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Survey Form</title>
+  <title>Product Landing Page</title>
 
   <!-- Custom styles for this template -->
   <link href="style.scss" rel="stylesheet">
@@ -17,7 +17,14 @@
 
 <div class="container">
   <div class="header">
-    <h1 id="title">Survey Form</h1>
+    <div class="logo"><img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="Logo"></div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#price">Pricing</a></li>
+      </ul>
+    </nav>
   </div>
   <div class="main">
     <p id="description">Let us know how we can improve freeCodeCamp</p>
@@ -75,7 +82,9 @@
         <label for="s11"> <input type="checkbox" name="taxi" id="s11" value="car">Additional Courses</label>
       </fieldset>
 
-      <label for="comments">Any Comments or Suggestions?</label><textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+      <label for="comments">Any Comments or Suggestions?</label><textarea name="comments" id="comments" cols="30"
+                                                                          rows="10"
+                                                                          placeholder="Enter your comment here..."></textarea>
 
       <button id="submit" type="submit">Submit</button>
     </form>
