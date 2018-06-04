@@ -1,0 +1,20 @@
+body {
+  background-color: rgba(174, 252, 255, 0.75);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "h"
+                        "c"
+                        "f";
+  header {
+    grid-area: h;
+  }
+  article {
+    grid-area: c;
+  }
+  footer {
+    grid-area: f;
+  }
+}

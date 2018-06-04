@@ -1,0 +1,7 @@
+{
+  "name": "FCC",
+  "version": "0.01",
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
