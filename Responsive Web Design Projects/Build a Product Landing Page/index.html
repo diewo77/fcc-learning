@@ -16,14 +16,14 @@
 <body class="">
 
 <div class="container">
-    <header class="header">
+    <header class="header" id="header">
         <div class="navigation">
-            <div class="logo"><img src="original_trombones.png" alt="Logo"></div>
-            <nav class="navbar">
+            <div class="logo"><img id="header-img" src="original_trombones.png" alt="Logo"></div>
+            <nav class="navbar" id="nav-bar">
                 <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#how">How It Works</a></li>
-                    <li><a href="#price">Pricing</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#price">Pricing</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,7 +34,13 @@
             <h2 class="main-msg">Handcrafted, home-made masterpieces</h2>
         </div>
 
-        <div class="products-title"><p>our best selling products !</p></div>
+        <div class="main-video" id="features">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+
+        <div class="products-title" id="price"><p>our best selling products !</p></div>
         <div class="main-products">
             <div class="card">
                 <div class="card-header">
@@ -76,6 +82,25 @@
                 </div>
             </div>
         </div>
+<hr/>
+        <div class="contact-form" id="contact">
+            <h2 class="contact-title">Contact Us</h2>
+            <form class="form1" action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+                <label id="name-label" for="name" class="first-name">First Name: *</label>
+                <input id="name" type="text" placeholder="First Name" required>
+
+                <label id="email-label" for="email">Email: *</label>
+                <input id="email" type="email" name="email" placeholder="Your email address" required>
+
+                <label for="comments">Any Comments or Suggestions?</label>
+                <textarea name="comments" id="comments"
+                                                                                    cols="30" rows="10"
+                                                                                    placeholder="Enter your comment here..."></textarea>
+
+                <input id="submit" type="submit"/>
+            </form>
+        </div>
+        <hr/>
     </div>
 </div>
 
