@@ -16,29 +16,30 @@
 <body class="">
 
 <div class="container">
-    <nav id="code">
-        <header>How CSS works</header>
-        <ul>
-            <li><a href="#introduction">Introduction?</a></li>
-            <li><a href="#what_is_css">What is CSS?</a></li>
-            <li><a href="#How_does_CSS_affect_HTML">What is CSS?</a></li>
-            <li><a href="#How_does_CSS_actually_work">What is CSS?</a></li>
-            <li><a href="#How_does_CSS_actually_work">How does CSS actually work?</a></li>
-            <li><a href="#About_the_DOM">About the DOM</a></li>
-            <li><a href="#How_to_apply_your_CSS_to_your_HTML">How to apply your CSS to your HTML</a></li>
-
-        </ul>
-    </nav>
+    <div class="sidebar">
+        <nav id="navbar">
+            <header>How CSS works</header>
+            <ul>
+                <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#What_is_CSS">What is CSS?</a></li>
+                <li><a class="nav-link" href="#How_does_CSS_affect_HTML">How does CSS affect HTML</a></li>
+                <li><a class="nav-link" href="#How_does_CSS_actually_work">How does CSS actually work</a></li>
+                <li><a class="nav-link" href="#About_the_DOM">About the DOM</a></li>
+                <li><a class="nav-link" href="#How_to_apply_your_CSS_to_your_HTML">How to apply your CSS to your HTML</a></li>
+            </ul>
+        </nav>
+    </div>
     <main class="main" id="main-doc">
-        <section class="main-section" id="introduction">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
             <p>CSS (Cascading Style Sheets) allows you to create great looking web pages, but how does it work under the
                 hood? This article explains what CSS is, how the browser turns HTML into a Document Object Model (DOM),
                 how CSS is applied to parts of the DOM, some very basic syntax examples, and what code is used to
                 actually include our CSS in our web page.</p>
         </section>
-        <section class="main-section" id="what_is_css">
+        <section class="main-section" id="What_is_CSS">
             <!--todo add an id to anchor with the left menu-->
-            <h2>What is CSS?</h2>
+            <header>What is CSS</header>
             <p>As we have mentioned before, CSS is a language for specifying how documents are presented to users — how
                 they are styled, laid out, etc.</p>
             <p>A <span class="bold">document</span> is usually a text file structured using a <span class="italic">markup language</span>
@@ -48,13 +49,9 @@
                 audience. Browsers, like
                 Firefox, Chrome or Internet Explorer, are designed to present documents visually, for example, on a
                 computer screen, projector or printer.</p>
-            <code></code>
-            <ul>
-                <li></li>
-            </ul>
         </section>
         <section class="main-section" id="How_does_CSS_affect_HTML">
-            <h2>How does CSS affect HTML?</h2>
+            <header>How does CSS affect HTML</header>
             <p>Web browsers apply CSS rules to a document to affect how they are displayed. A CSS rule is formed
                 from:</p>
             <ul class="element-list">
@@ -119,7 +116,7 @@
             </p>
         </section>
         <section class="main-section" id="How_does_CSS_actually_work">
-            <h2>How does CSS actually work?</h2>
+            <header>How does CSS actually work</header>
             <p>When a browser displays a document, it must combine the document's content with its style information. It
                 processes the document in two stages:</p>
             <ol>
@@ -130,7 +127,7 @@
             </ol>
         </section>
         <section class="main-section" id="About_the_DOM">
-            <h2>About the DOM</h2>
+            <header>About the DOM</header>
             <p>A DOM has a tree-like structure. Each element, attribute and piece of text in the markup language becomes
                 a DOM node in the tree structure. The nodes are defined by their relationship to other DOM nodes. Some
                 elements are parents of child nodes, and child nodes have siblings.</p>
@@ -180,7 +177,7 @@
             </code></pre>
         </section>
         <section class="main-section" id="How_to_apply_your_CSS_to_your_HTML">
-            <h2>How to apply your CSS to your HTML</h2>
+            <header>How to apply your CSS to your HTML</header>
             <p>There are three different ways to apply CSS to an HTML document that you'll commonly come across, some
                 more useful than others. Here we'll briefly review each one.</p>
             <h3>External stylesheet</h3>
