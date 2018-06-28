@@ -1,9 +1,85 @@
+$max-width: 650px;
 .container {
   display: flex;
   align-items: center;
-  #code {
+  @media (max-width: $max-width) {
+    flex-flow: wrap;
+  }
+  .sidebar {
     position: sticky;
     top: 0;
     left: 0;
+    height: 100vh;
+    align-self: start;
+    @media (max-width: $max-width) {
+      position: relative;
+      align-self: start;
+      height: 100%;
+      width: 100%;
+    }
+    #navbar {
+      width: 320px;
+      @media (max-width: $max-width) {
+        width: 100%;
+      }
+      header {
+        text-align: left;
+        font-weight: 300;
+        font-size: 1.6em;
+        text-decoration: underline;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        li > a {
+          display: block;
+          border-top: 0.05em solid black;
+          padding: 1.1em;
+          text-transform: none;
+          color: #232323;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  main {
+    border-left: 0.2em solid #929292;
+    padding: 1em;
+    top: 0;
+    left: 0;
+    min-width: 350px;
+    @media (max-width: $max-width) {
+      border-left: none;
+      padding: 0;
+    }
+    section {
+      color: #595959;
+      border-bottom: 0.05em solid grey;
+      margin-left: .3em;
+      margin-right: .3em;
+      @media (max-width: $max-width) {
+      }
+      header {
+        font-weight: 600;
+        color: black;
+      }
+      p {
+        text-align: left;
+      }
+      h3 {
+        font-weight: 300;
+        padding-left: 1.5em;
+        background-color: black;
+        color: white;
+      }
+      pre {
+        background-color: #e8e8e8;
+        width: 100%;
+        margin-left: 2em;
+        overflow: scroll;
+        code {
+        }
+      }
+    }
   }
 }
